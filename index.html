@@ -10,16 +10,17 @@
 <body>
     <h1>Tic Tac Toe</h1>
     <div id="button-holders">
-        <button id="1" class="button" onclick="changeValue('1')"></button>
-        <button id="2" class="button" onclick="changeValue('2')"></button>
-        <button id="3" class="button" onclick="changeValue('3')"></button>
-        <button id="4" class="button" onclick="changeValue('4')"></button>
-        <button id="5" class="button" onclick="changeValue('5')"></button>
-        <button id="6" class="button" onclick="changeValue('6')"></button>
-        <button id="7" class="button" onclick="changeValue('7')"></button>
-        <button id="8" class="button" onclick="changeValue('8')"></button>
-        <button id="9" class="button" onclick="changeValue('9')"></button>
+        <button id="1" class="button" onclick="buttonClick([0,0])"></button>
+        <button id="2" class="button" onclick="buttonClick([0,1])"></button>
+        <button id="3" class="button" onclick="buttonClick([0,2])"></button>
+        <button id="4" class="button" onclick="buttonClick([1,0])"></button>
+        <button id="5" class="button" onclick="buttonClick([1,1])"></button>
+        <button id="6" class="button" onclick="buttonClick([1,2])"></button>
+        <button id="7" class="button" onclick="buttonClick([2,0])"></button>
+        <button id="8" class="button" onclick="buttonClick([2,1])"></button>
+        <button id="9" class="button" onclick="buttonClick([2,2])"></button>
     </div>
+    <p>Player: <span id='turn-display'>O</span> </p>
     <script src="index.js"></script>
 </body>
 </html>
