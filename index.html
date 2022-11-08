@@ -8,21 +8,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Tic Tac Toe</h1>
-        <div id="button-holders">
-            <button id="1" class="button row1" onclick="buttonClick([0,0])"></button>
-            <button id="2" class="button row1" onclick="buttonClick([0,1])"></button>
-            <button id="3" class="button row1" onclick="buttonClick([0,2])"></button>
-            <button id="4" class="button row2" onclick="buttonClick([1,0])"></button>
-            <button id="5" class="button row2" onclick="buttonClick([1,1])"></button>
-            <button id="6" class="button row2" onclick="buttonClick([1,2])"></button>
-            <button id="7" class="button row3" onclick="buttonClick([2,0])"></button>
-            <button id="8" class="button row3" onclick="buttonClick([2,1])"></button>
-            <button id="9" class="button row3" onclick="buttonClick([2,2])"></button>
+        <div id="main-screen">
+            <h1>Tic Tac Toe</h1>
+            <p>Player: <span id='turn-display'>O</span> </p>
+            <div id="display-section">
+                <p class="win-display"><span id='o-wins'>0</span></p>
+                <p class="win-display">Wins</p>
+                <p class="win-display"><span id='x-wins'>0</span></p>
+            </div>
+            <div id="button-holder">
+                <button id="1" class="button" onclick="buttonClick([0,0])"></button>
+                <button id="2" class="button" onclick="buttonClick([0,1])"></button>
+                <button id="3" class="button" onclick="buttonClick([0,2])"></button>
+                <button id="4" class="button" onclick="buttonClick([1,0])"></button>
+                <button id="5" class="button" onclick="buttonClick([1,1])"></button>
+                <button id="6" class="button" onclick="buttonClick([1,2])"></button>
+                <button id="7" class="button" onclick="buttonClick([2,0])"></button>
+                <button id="8" class="button" onclick="buttonClick([2,1])"></button>
+                <button id="9" class="button" onclick="buttonClick([2,2])"></button>
+            </div>
+            <button onclick="tempReset()">Play Again</button>
+            <button onclick="tempReset(true)">Reset Game</button>
         </div>
-        <p>Player: <span id='turn-display'>O</span> </p>
-        <p>Wins: O: <span id='x-win-display'>0</span> X: <span id="o-win-display">0</span></p>
-        <!-- <script src="index.js"></script> -->
-        <script src="index2.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

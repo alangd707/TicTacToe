@@ -1,16 +1,33 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     height: 100vh;
     width: 100vw;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    margin:0;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: gray;
+    font-size: 30px;
 }
-#button-holders {
+#display-section {
+    display:flex;
+    justify-content: space-around;
+}
+.win-display {
+    font-size: 20px;
+}
+#main-screen {
+    text-align:center;
+}
+#button-holder {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     height: 400px;
     width: 400px;
+}
+.button {
+    font-size: 100px;
+    background-color: rgb(240,240,240);
 }
